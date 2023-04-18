@@ -5,9 +5,8 @@ Computer Systems Architecture Course
 Assignment 1
 March 2021
 """
-
+import time
 from threading import Thread
-
 
 class Producer(Thread):
     """
@@ -31,7 +30,21 @@ class Producer(Thread):
         @type kwargs:
         @param kwargs: other arguments that are passed to the Thread's __init__()
         """
-        pass
+        Thread.__init__(self, daemon=True)
+        self.marketplace = marketplace
+        self.republish_wait_time = republish_wait_time
+        self.producer_id = self.marketplace.register_producer()
+        self.products = products
 
     def run(self):
-        pass
+        while 1:
+            for product_information in self.products:
+                product = product_information[0]
+                quantity = product_information[1]
+                production_wait_time = product_information[2]
+
+                time.sleep(production_wait_time)
+
+                while quantity != 0:
+                    while not self.marketplace.publish(self.producer_id, product):
+                        time.sleep(self.republish_wait_time)

@@ -5,7 +5,7 @@ Computer Systems Architecture Course
 Assignment 1
 March 2021
 """
-
+from threading import Lock, Semaphore
 
 class Marketplace:
     """
@@ -19,13 +19,27 @@ class Marketplace:
         :type queue_size_per_producer: Int
         :param queue_size_per_producer: the maximum size of a queue associated with each producer
         """
-        pass
+        self.queue_size_per_producer = queue_size_per_producer
+        self.register_producer_lock = Lock()
+        self.products_queue = []
+        self.producers_dictionary = {}
+        self.current_producer_id = 0
+
+        self.producers_lock = Lock()
+        self.consumers_lock = Lock()
 
     def register_producer(self):
         """
         Returns an id for the producer that calls this.
         """
-        pass
+        self.register_producer_lock.acquire()
+        current_value = self.current_producer_id
+        self.current_producer_id += 1
+        self.register_producer_lock.release()
+
+        self.producers_dictionary[current_value] = self.queue_size_per_producer
+
+        return current_value
 
     def publish(self, producer_id, product):
         """
@@ -39,7 +53,14 @@ class Marketplace:
 
         :returns True or False. If the caller receives False, it should wait and then try again.
         """
-        pass
+        if self.producers_dictionary[producer_id] <= 0:
+            return False
+
+        self.products_queue.append(product)
+        self.producers_dictionary[producer_id] -= 1
+
+        return True
+
 
     def new_cart(self):
         """
