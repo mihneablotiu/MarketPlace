@@ -57,6 +57,5 @@ class Consumer(Thread):
 
         buy_list = self.marketplace.place_order(self.cart_id)
         for (current_product, _) in buy_list:
-            Consumer.print_lock.acquire()
-            print(self.name + " bought " + str(current_product))
-            Consumer.print_lock.release()
+            with Consumer.print_lock:
+                print(self.name + " bought " + str(current_product))
