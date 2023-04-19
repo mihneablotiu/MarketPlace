@@ -37,10 +37,9 @@ class Marketplace:
         """
         Returns an id for the producer that calls this.
         """
-        self.register_producer_lock.acquire()
-        current_value = self.current_producer_id
-        self.current_producer_id += 1
-        self.register_producer_lock.release()
+        with self.register_producer_lock:
+            current_value = self.current_producer_id
+            self.current_producer_id += 1
 
         self.producers_dictionary[current_value] = self.queue_size_per_producer
 
@@ -73,12 +72,11 @@ class Marketplace:
 
         :returns an int representing the cart_id
         """
-        self.register_new_cart_lock.acquire()
-        return_value = self.current_cart_id
-        self.current_cart_id += 1
-        self.register_new_cart_lock.release()
+        with self.register_new_cart_lock:
+            current_value = self.current_cart_id
+            self.current_cart_id += 1
 
-        return return_value
+        return current_value
 
     def add_to_cart(self, cart_id, product):
         """
