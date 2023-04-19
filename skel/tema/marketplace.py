@@ -32,6 +32,7 @@ class Marketplace:
         self.consumers_carts = {}
 
         self.consumers_lock = Lock()
+        self.consumers_print_lock = Lock()
 
     def register_producer(self):
         """
@@ -58,7 +59,7 @@ class Marketplace:
         :returns True or False. If the caller receives False, it should wait and then try again.
         """
 
-        if self.producers_dictionary[producer_id] == 0:
+        if self.producers_dictionary[producer_id] <= 0:
             return False
 
         self.products_queue.append((product, producer_id))
@@ -96,7 +97,7 @@ class Marketplace:
         if product in products_list:
             index = products_list.index(product)
             (_, producer_id) = self.products_queue[index]
-            self.products_queue.remove(self.products_queue[index])
+            self.products_queue.pop(index)
             self.producers_dictionary[producer_id] += 1
 
             self.consumers_lock.release()
@@ -139,3 +140,21 @@ class Marketplace:
         :param cart_id: id cart
         """
         return self.consumers_carts[cart_id]
+
+    def print_consumer(self, consumer_name, cart_id):
+        """
+        Prints the products that the consumers bought
+        from the marketplace.
+
+        :type consumer_name: str
+        :param consumer_name: the name of the consumer
+
+        :type cart_id: int
+        :param cart_id: the cart that is currently bought
+        """
+        buy_list = self.place_order(cart_id)
+        for (current_product, _) in buy_list:
+            with self.consumers_print_lock:
+                print(consumer_name + " bought " + str(current_product))
+
+        self.consumers_carts[cart_id].clear()

@@ -6,14 +6,13 @@ Assignment 1
 March 2021
 """
 import time
-from threading import Thread, Lock
+from threading import Thread
 
 
 class Consumer(Thread):
     """
     Class that represents a consumer.
     """
-    print_lock = Lock()
 
     def __init__(self, carts, marketplace, retry_wait_time, **kwargs):
         """
@@ -55,7 +54,4 @@ class Consumer(Thread):
                     if action_type == "remove":
                         self.marketplace.remove_from_cart(self.cart_id, product)
 
-        buy_list = self.marketplace.place_order(self.cart_id)
-        for (current_product, _) in buy_list:
-            with Consumer.print_lock:
-                print(self.name + " bought " + str(current_product))
+            self.marketplace.print_consumer(self.name, self.cart_id)
