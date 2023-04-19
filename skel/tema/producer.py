@@ -45,6 +45,6 @@ class Producer(Thread):
 
                 time.sleep(production_wait_time)
 
-                while quantity != 0:
+                for _ in range(quantity):
                     while not self.marketplace.publish(self.producer_id, product):
                         time.sleep(self.republish_wait_time)

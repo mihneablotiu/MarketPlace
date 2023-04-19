@@ -1,6 +1,6 @@
 Starting test 1
 Finished test 1
-Test 1:		FAILED
+Test 1:		PASSED
 Starting test 2
 Finished test 2
 Test 2:		FAILED
@@ -28,27 +28,14 @@ Test 9:		FAILED
 Starting test 10
 Finished test 10
 Test 10:		FAILED
-************* Module marketplace
-tema/marketplace.py:71:8: W0107: Unnecessary pass statement (unnecessary-pass)
-tema/marketplace.py:85:8: W0107: Unnecessary pass statement (unnecessary-pass)
-tema/marketplace.py:97:8: W0107: Unnecessary pass statement (unnecessary-pass)
-tema/marketplace.py:106:8: W0107: Unnecessary pass statement (unnecessary-pass)
-tema/marketplace.py:8:0: W0611: Unused Semaphore imported from threading (unused-import)
 
-------------------------------------------------------------------
-Your code has been rated at 9.28/10 (previous run: 9.23/10, +0.04)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
-TIMEOUT. Tests exceeded maximum allowed time of 360
 
 Run pylint
 
-************* Module marketplace
-tema/marketplace.py:71:8: W0107: Unnecessary pass statement (unnecessary-pass)
-tema/marketplace.py:85:8: W0107: Unnecessary pass statement (unnecessary-pass)
-tema/marketplace.py:97:8: W0107: Unnecessary pass statement (unnecessary-pass)
-tema/marketplace.py:106:8: W0107: Unnecessary pass statement (unnecessary-pass)
-tema/marketplace.py:8:0: W0611: Unused Semaphore imported from threading (unused-import)
 
-------------------------------------------------------------------
-Your code has been rated at 9.28/10 (previous run: 9.28/10, +0.00)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
