@@ -1,20 +1,34 @@
-[(Tea(name='Linden', price=9, type='Herbal'), 2, 0.18), (Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 1, 0.23)]
-[(Tea(name='Linden', price=9, type='Herbal'), 3, 0.39)]
-[(Tea(name='Linden', price=9, type='Herbal'), 1, 0.31)]
-[(Tea(name='Linden', price=9, type='Herbal'), 2, 0.2), (Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 3, 0.27)]
-[(Tea(name='Linden', price=9, type='Herbal'), 1, 0.33), (Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 3, 0.37)]
-[(Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 2, 0.14), (Tea(name='Linden', price=9, type='Herbal'), 2, 0.3)]
-[(Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 1, 0.33)]
-[(Tea(name='Linden', price=9, type='Herbal'), 3, 0.4)]
-[(Tea(name='Linden', price=9, type='Herbal'), 3, 0.17), (Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 3, 0.12)]
-[(Tea(name='Linden', price=9, type='Herbal'), 3, 0.33), (Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 2, 0.25)]
-[(Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 1, 0.26)]
-[(Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 3, 0.32), (Tea(name='Linden', price=9, type='Herbal'), 1, 0.37)]
-[(Tea(name='Linden', price=9, type='Herbal'), 1, 0.36), (Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 3, 0.34)]
-[(Tea(name='Linden', price=9, type='Herbal'), 3, 0.27), (Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 3, 0.37)]
-[(Tea(name='Linden', price=9, type='Herbal'), 3, 0.09)]
-[(Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 1, 0.31), (Tea(name='Linden', price=9, type='Herbal'), 1, 0.3)]
-[(Tea(name='Linden', price=9, type='Herbal'), 2, 0.34)]
-[(Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 1, 0.34)]
-[(Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM'), 1, 0.27)]
-[(Tea(name='Linden', price=9, type='Herbal'), 1, 0.18)]
+cons4 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons2 bought Tea(name='Linden', price=9, type='Herbal')
+cons2 bought Tea(name='Linden', price=9, type='Herbal')
+cons2 bought Tea(name='Linden', price=9, type='Herbal')
+cons2 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons1 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons1 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons1 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons1 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons3 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons3 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons3 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons3 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons3 bought Tea(name='Linden', price=9, type='Herbal')
+cons3 bought Tea(name='Linden', price=9, type='Herbal')
+cons3 bought Tea(name='Linden', price=9, type='Herbal')
+cons3 bought Tea(name='Linden', price=9, type='Herbal')
+cons3 bought Tea(name='Linden', price=9, type='Herbal')
+cons3 bought Tea(name='Linden', price=9, type='Herbal')
+cons3 bought Tea(name='Linden', price=9, type='Herbal')
+cons3 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons3 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons3 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons5 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons5 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons5 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
+cons5 bought Tea(name='Linden', price=9, type='Herbal')
+cons5 bought Tea(name='Linden', price=9, type='Herbal')
+cons5 bought Tea(name='Linden', price=9, type='Herbal')
+cons5 bought Tea(name='Linden', price=9, type='Herbal')
+cons5 bought Tea(name='Linden', price=9, type='Herbal')
+cons5 bought Tea(name='Linden', price=9, type='Herbal')
+cons5 bought Tea(name='Linden', price=9, type='Herbal')
+cons5 bought Coffee(name='Indonezia', price=1, acidity=5.05, roast_level='MEDIUM')
