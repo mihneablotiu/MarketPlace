@@ -28,19 +28,10 @@ Test 9:		PASSED
 Starting test 10
 Finished test 10
 Test 10:		PASSED
-************* Module marketplace
-tema/marketplace.py:95:8: R1732: Consider using 'with' for resource-allocating operations (consider-using-with)
-
-------------------------------------------------------------------
-Your code has been rated at 9.91/10 (previous run: 9.91/10, +0.00)
-
-TIMEOUT. Tests exceeded maximum allowed time of 360
 
 Run pylint
 
-************* Module marketplace
-tema/marketplace.py:95:8: R1732: Consider using 'with' for resource-allocating operations (consider-using-with)
 
-------------------------------------------------------------------
-Your code has been rated at 9.91/10 (previous run: 9.91/10, +0.00)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
