@@ -31,7 +31,27 @@ Test 10:		PASSED
 
 Run pylint
 
+************* Module marketplace
+tema/marketplace.py:50:0: C0301: Line too long (102/100) (line-too-long)
+tema/marketplace.py:84:0: C0301: Line too long (118/100) (line-too-long)
+tema/marketplace.py:164:0: C0301: Line too long (128/100) (line-too-long)
+tema/marketplace.py:175:0: C0301: Line too long (107/100) (line-too-long)
+tema/marketplace.py:184:0: C0301: Line too long (104/100) (line-too-long)
+tema/marketplace.py:16:0: R0902: Too many instance attributes (13/10) (too-many-instance-attributes)
+tema/marketplace.py:69:8: W1201: Specify string format arguments as logging function parameters (logging-not-lazy)
+tema/marketplace.py:84:8: W1201: Specify string format arguments as logging function parameters (logging-not-lazy)
+tema/marketplace.py:86:12: W1201: Specify string format arguments as logging function parameters (logging-not-lazy)
+tema/marketplace.py:93:8: W1201: Specify string format arguments as logging function parameters (logging-not-lazy)
+tema/marketplace.py:108:8: W1201: Specify string format arguments as logging function parameters (logging-not-lazy)
+tema/marketplace.py:123:8: W1201: Specify string format arguments as logging function parameters (logging-not-lazy)
+tema/marketplace.py:142:12: W1201: Specify string format arguments as logging function parameters (logging-not-lazy)
+tema/marketplace.py:149:8: W1201: Specify string format arguments as logging function parameters (logging-not-lazy)
+tema/marketplace.py:164:8: W1201: Specify string format arguments as logging function parameters (logging-not-lazy)
+tema/marketplace.py:174:12: W1201: Specify string format arguments as logging function parameters (logging-not-lazy)
+tema/marketplace.py:184:8: W1201: Specify string format arguments as logging function parameters (logging-not-lazy)
+tema/marketplace.py:198:8: W1201: Specify string format arguments as logging function parameters (logging-not-lazy)
+tema/marketplace.py:207:8: W1201: Specify string format arguments as logging function parameters (logging-not-lazy)
 
---------------------------------------------------------------------
-Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+-------------------------------------------------------------------
+Your code has been rated at 8.66/10 (previous run: 10.00/10, -1.34)
 
