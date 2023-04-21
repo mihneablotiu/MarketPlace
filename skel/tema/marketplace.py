@@ -11,7 +11,7 @@ import unittest
 from logging.handlers import RotatingFileHandler
 from threading import Lock
 import time
-from tema.product import Tea, Coffee
+from .product import Tea, Coffee
 
 
 class TestMarketplace(unittest.TestCase):
